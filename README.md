@@ -8,5 +8,7 @@ Modalitat - tecnologic
 
 presentació:
 Faig aquesta assignatura perquè m'agraden els videojocs i les aplicacions en general, tinc la idea de crear un joc i pensava que aquí aprendria els bàsics, però han passat 8 10* SESSIONS I NO HEM FET RES. Llavors estic una mica desesperat. AAAAAAAAAAAAAhHHHHHHHHHHGGGGGGGGGGGGgg
+prueba 2
 
+g
 bb
