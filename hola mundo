@@ -1,3 +1,14 @@
+
+
+
+num=1
+print(num)
+num=2.5
+print(num)
+num="ups"
+print(num)
+
+
 nom=input("Como te llamas? ")
 print("buenas",nom,"que tal?")
 edad=input("y cuantos años tienes? ")
