@@ -1,4 +1,4 @@
-print("hola mundo")
-print("escriu la teva edad")
-input()
-
+nom=input("Como te llamas? ")
+print("buenas",nom,"que tal?")
+edad=input("y cuantos años tienes? ")
+print("entonces naciste en el", 2026-int(edad),"? Interesante")
