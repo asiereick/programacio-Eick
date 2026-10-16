@@ -8,8 +8,20 @@ print(num)
 num="ups"
 print(num)
 
+variable1="57"
+print(variable1)
+print(2+2)
+#print(2+variable1)
+variable2=int(variable1)
+print(variable2)
+print(2+variable2)
+
+print(int("paco"))
+#en vez de print noseque puedes ponerlo en el imput
 
 nom=input("Como te llamas? ")
 print("buenas",nom,"que tal?")
-edad=input("y cuantos años tienes? ")
-print("entonces naciste en el", 2026-int(edad),"? Interesante")
+edad=input("y cuando naciste? ")
+print("vale",nom,"entonces en 2027 tendras", 2027-int(edad),"años, a que si")
+#paara sumar/restar variables DE NUMEROS ENTRE "" usaa el int() 
+print("Hola mundo")
