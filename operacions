@@ -25,3 +25,5 @@ print("division entera contraria",int(num2)//int(num1))
 print("potencia",int(num1)**int(num2))
 
 print("potencia contraria",int(num2)**int(num1))
+
+#seguro que se puede hacer mas comprimido, si se puede lo pongo aqui abajo
