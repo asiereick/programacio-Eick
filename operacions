@@ -1,0 +1,27 @@
+#UN PROGRAMA QUE le das 2 numeros y te da todas las op posibles
+num1=input("escrive el primer numero: ")
+num2=input("ahora el segundo: ")
+
+print("suma",int(num1)+int(num2))
+
+print("resta",int(num1)-int(num2))
+
+print("resta contraria",int(num2)-int(num1))
+
+print("multiplicacion",int(num1)*int(num2))
+
+print("division",int(num1)/int(num2))
+
+print("division contraria",int(num2)/int(num1))
+
+print("modulo",int(num1)%int(num2))
+
+print("modulo contrario",int(num2)%int(num1))
+
+print("division entera",int(num1)//int(num2))
+
+print("division entera contraria",int(num2)//int(num1))
+
+print("potencia",int(num1)**int(num2))
+
+print("potencia contraria",int(num2)**int(num1))
