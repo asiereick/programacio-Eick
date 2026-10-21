@@ -4,26 +4,76 @@ num2=input("ahora el segundo: ")
 
 print("suma",int(num1)+int(num2))
 
+
 print("resta",int(num1)-int(num2))
 
 print("resta contraria",int(num2)-int(num1))
 
+
 print("multiplicacion",int(num1)*int(num2))
+
 
 print("division",int(num1)/int(num2))
 
 print("division contraria",int(num2)/int(num1))
 
+
 print("modulo",int(num1)%int(num2))
 
 print("modulo contrario",int(num2)%int(num1))
+
 
 print("division entera",int(num1)//int(num2))
 
 print("division entera contraria",int(num2)//int(num1))
 
-print("potencia",int(num1)**int(num2))
+
+print("potencia",int(num1)**int(num2) )
 
 print("potencia contraria",int(num2)**int(num1))
 
 #seguro que se puede hacer mas comprimido, si se puede lo pongo aqui abajo
+
+num1=int(input("escrive el primer numero: "))
+num2=int(input("ahora el segundo: "))
+
+print("suma",num1+num2)
+
+print("resta",num1-num2, 
+      "contraria",num2-num1)
+
+print("multiplicacion",num1*num2)
+
+print("division",num1/num2,
+       "contraria",num2/num1)
+
+print("modulo",num1%num2,
+       "contrario",num2%num1)
+
+print("division entera",num1//num2,
+       "contraria",num2//num1)
+
+print("potencia",num1**num2,
+       "contraria",num2**num1)
+
+
+#OPERACIONES DE TEXTOS
+
+t1=input("escrive un texto: ")
+t2=input("escrive otro texto: ")
+
+print("operaciones de texto\n")
+print("concatenar:", t1+t2)
+print("multiplicar:", t1*3, "\n")
+
+#modificar para que canvie els numeros
+
+n1=int(input("primer numero: "))
+n2=int(input("segon numero: "))
+print("\n")
+print("n1 es igual a", n1, "n2 es igual a", n2)
+aux=n1 #variable para guardar el n1 se llama "variable auxiliar"
+n1=n2
+n2=aux 
+#las dos lineas de ariba lo que hacen es canviar el valor de n1 por el de n2 sin perder el de n1
+print("ahora n1 es igual a", n1, "y n2 ahora es igual a", n2)
