@@ -14,7 +14,7 @@ if(n1+n2<4):{
     print("suma menor que 4""\n")
 }
 
-#con el or
+#con el or y cambiandolo un poco seria algo como esto 
 
 if(n1+n2>8 or n1<4):{
     print("suma mayor que 8 o menor que 4""\n")}
