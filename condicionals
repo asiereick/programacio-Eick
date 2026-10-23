@@ -1,0 +1,20 @@
+n1=int(input("numero 1: "))
+n2=int(input("numero 2: "))
+
+if(n1+n2>10):{
+    print("mayor que 10 ""\n")}
+else:{
+    print("menor que 10 ""\n")}
+
+#tambien puede ser en 1 linea if(n1+n2>10):{ print("mayor que 10 :")}
+
+if(n1+n2>8):{
+    print("suma mayor que 8""\n")}
+if(n1+n2<4):{
+    print("suma menor que 4""\n")
+}
+
+#con el or
+
+if(n1+n2>8 or n1<4):{
+    print("suma mayor que 8 o menor que 4""\n")}
