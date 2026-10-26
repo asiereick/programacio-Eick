@@ -29,4 +29,6 @@ if not (n1+n2==13):{print("suma no es 13")}
 
 #ahora comprueba si es 15
 
-if(n1+n2==15):{print("la suma es 15")}
+else{
+    if(n1+n2==15):{print("la suma es 15")}}
+#tambien si quieres  ponerlo en 1 linea puedes poner "elif{}" en vez de else{if{}}
