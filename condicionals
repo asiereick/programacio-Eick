@@ -18,3 +18,15 @@ if(n1+n2<4):{
 
 if(n1+n2>8 or n1<4):{
     print("suma mayor que 8 o menor que 4""\n")}
+
+#programa que dice si sum es mayor que 14 y menor que 18
+
+if(n1+n2>12 and n1+n2<18):{print("la suma es mayor que 14 y menor que 18")}
+                            
+#programa dice si la suma no es 13
+
+if not (n1+n2==13):{print("suma no es 13")}
+
+#ahora comprueba si es 15
+
+if(n1+n2==15):{print("la suma es 15")}
