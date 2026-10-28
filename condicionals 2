@@ -1,7 +1,16 @@
-n1=int(input("primer numero: "))
-n2=int(input("segundo numero: "))
+n1=int(input("primer numero(n1): "))
+n2=int(input("segundo numero(n2): "))
+oper=input("pulsa la operacion que quieras como simbulo(+,-,*,**,/,%,//): ")
 
-oper=input("pulsa la operacion que quieras como simbulo(+,-,*,/,%,//,**): ")
 print("\n")
+
 if oper=="+":{print( "n1 + n2 = ", n1+n2)}
-if oper=="-":{print( "n1 - n2 = ", n1-n2)}
+if oper=="-":{noiv=input( "normal(n1-n2) o inversa(n2-n1)?: ")
+     if noiv   }
+if oper=="*":{print( "n1 * n2 = ", n1*n2)}
+if oper=="**":{print( "n1 ** n2 = ", n1**n2, "\t" "n2 ** n1 = ", n2**n1)}
+if oper=="/":{print( "n1 / n2 = ", n1/n2, "\t" "n2 / n1 = ", n2/n1)}
+if oper=="%":{print( "n1 % n2 = ", n1%n2, "\t" "n2 % n1 = ", n2%n1)}
+if oper=="//":{print( "n1 // n2 = ", n1//n2, "\t" "n2 // n1 = ", n2//n1)}
+
+print("\n")
