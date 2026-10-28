@@ -4,13 +4,32 @@ oper=input("pulsa la operacion que quieras como simbulo(+,-,*,**,/,%,//): ")
 
 print("\n")
 
-if oper=="+":{print( "n1 + n2 = ", n1+n2)}
-if oper=="-":{noiv=input( "normal(n1-n2) o inversa(n2-n1)?: ")
-     if noiv   }
-if oper=="*":{print( "n1 * n2 = ", n1*n2)}
-if oper=="**":{print( "n1 ** n2 = ", n1**n2, "\t" "n2 ** n1 = ", n2**n1)}
-if oper=="/":{print( "n1 / n2 = ", n1/n2, "\t" "n2 / n1 = ", n2/n1)}
-if oper=="%":{print( "n1 % n2 = ", n1%n2, "\t" "n2 % n1 = ", n2%n1)}
-if oper=="//":{print( "n1 // n2 = ", n1//n2, "\t" "n2 // n1 = ", n2//n1)}
+noiv==input("quieres normal, inversa o ambas?: ")
+
+if oper=="+":{if noiv=="normal":{print("suma normal:",n1+n2)}
+              if noiv=="inversa":{print("suma inversa:",n2+n1)}}
+            if noiv=="ambas":{print("suma normal:",n1+n2,"\t""suma inversa:",n2+n1)}
+
+if oper=="-":{if noiv=="normal":{print("resta normal:",n1-n2)}
+              if noiv=="inversa":{print("resta inversa:",n2-n1)}}
+              if noiv=="ambas":{print("resta normal:",n1-n2,"\t""resta inversa:",n2-n1)}
+
+if oper=="*":{if noiv=="normal":{print("multiplicacion normal:",n1*n2)}
+              if noiv=="inversa":{print("multiplicacion inversa:",n2*n1)}
+              if noiv=="ambas":{print("multiplicacion normal:",n1*n2,"\t""multiplicacion inversa:",n2*n1)}
+
+if oper=="/":{if noiv=="normal":{print("division normal:",n1/n2)}
+              if noiv=="inversa":{print("division inversa:",n2/n1)}
+              if noiv=="ambas":{print("division normal:",n1/n2,"\t""division inversa:",n2/n1)}
+
+if oper=="%":{if noiv=="normal":{print("modulo normal:",n1%n2)}
+              if noiv=="inversa":{print("modulo inversa:",n2%n1)}
+              if noiv=="ambas":{print("modulo normal:",n1%n2,"\t""modulo inversa:",n2%n1)}
+
+if oper=="//":{if noiv=="normal":{print("division entera normal:",n1//n2)}
+              if noiv=="inversa":{print("division entera inversa:",n2//n1)}
+              if noiv=="ambas":{print("division entera normal:",n1//n2,"\t""division entera inversa:",n2//n1)}
+
+if
 
 print("\n")
