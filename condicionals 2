@@ -1,0 +1,7 @@
+n1=int(input("primer numero: "))
+n2=int(input("segundo numero: "))
+
+oper=input("pulsa la operacion que quieras como simbulo(+,-,*,/,%,//,**): ")
+print("\n")
+if oper=="+":{print( "n1 + n2 = ", n1+n2)}
+if oper=="-":{print( "n1 - n2 = ", n1-n2)}
