@@ -1,18 +1,111 @@
 n1=int(input("primer numero(n1): "))
 n2=int(input("segundo numero(n2): "))
 
-noiv==input("quieres normal, inversa o ambas?: ")
+noiv=input("quieres normal(N), inversa(I) o ambas(A)?: ")
 
 oper=input("pulsa la operacion que quieras como simbulo(+,-,*,**,/,%,//): ")
 
+
+
 print("\n")
 
-if oper=="+":{if noiv=="normal":{print(n1 "+" n2 "=",n1+n2)}
-              if noiv=="inversa":{print(n2 "+" n2 "=",n2+n1)}
-            if noiv=="ambas":{print(n1 "+" n2"=",n1+n2,"\t"n2 "+" n1 "=",n2+n1)}}
+if oper=="+":
+  if noiv=="N":
+    print(n1,"+",n2,"=",n1+n2)
+  if noiv=="I":
+    print(n2,"+",n1,"=",n2+n1)
+  if noiv=="A":
+    print(n1,"+",n2,"=",n1+n2,"\t",n2,"+",n1,"=",n2+n1)
 
-if oper=="-":{if noiv=="normal":{print(n1 "-" n2 "=",n1-n2)}
-              if noiv=="inversa":{print(n2 "-" n2 "=",n2-n1)}
-            if noiv=="ambas":{print(n1 "-" n2"=",n1-n2,"\t"n2 "-" n1 "=",n2+-1)}}
+if oper=="-":
+  if noiv=="N":
+    print(n1,"-",n2,"=",n1-n2)
+  if noiv=="I":
+    print(n2,"-",n1,"=",n2-n1)
+  if noiv=="A":
+    print(n1,"-",n2,"=",n1-n2,"\t",n2,"-",n1,"=",n2-n1)
+
+if oper=="*":
+  if noiv=="N":
+    print(n1,"*",n2,"=",n1*n2)
+  if noiv=="I":
+    print(n2,"*",n1,"=",n2*n1)
+  if noiv=="A":
+    print(n1,"*",n2,"=",n1*n2,"\t",n2,"*",n1,"=",n2*n1)
+
+if oper=="**":
+  if noiv=="N":
+    if n1==0 and n2<0:
+      print("0 **",n2,"no es es posible elevar 0 a un negativo, prueba otro numero")
+    else:
+      print(n1,"**",n2,"=",n1**n2)
+  if noiv=="I":
+    if n2==0 and n1<0:
+      print("0 **",n1,"no es es posible elevar 0 a un negativo, prueba otro numero")
+    else:
+      print(n2,"**",n1,"=",n2**n1)
+  if noiv=="A":
+    if n1==0 and n2<0:
+      print("0 **",n2,"no es es posible elevar 0 a un negativo, prueba otro numero")
+    if n2==0 and n1<0:
+      print("0 **",n1,"no es es posible elevar 0 a un negativo, prueba otro numero")
+    else:
+      print(n1,"**",n2,"=",n1**n2,"\t",n2,"**",n1,"=",n2**n1)
+
+if oper=="/":
+  if noiv=="N":
+    if n2==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n1,"/",n2,"=",n1/n2)
+  if noiv=="I":
+    if n1==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n2,"/",n1,"=",n2/n1)
+  if noiv=="A":
+    print(n1,"/",n2,"=",n1/n2,"\t",n2,"/",n1,"=",n2/n1)
+
+if oper=="%":
+  if noiv=="N":
+    print(n1,"%",n2,"=",n1%n2)
+  if noiv=="I":
+    print(n2,"%",n1,"=",n2%n1)
+  if noiv=="A":
+    print(n1,"%",n2,"=",n1%n2,"\t",n2,"%",n1,"=",n2%n1)
+
+
+if oper=="//":
+  if noiv=="N":
+    if n2==0:
+      print("no se puede dividir entre 0")
+    if (n2 < 0 ):
+      print("no pongs numeros negativos en el divisor")
+    else:print(n1,"//",n2,"=",n1//n2)
+  if noiv=="I":
+    if (n1 < 0 ):
+      print("no pongs numeros negativos en el divisor")
+    if n1==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n2,"//",n1,"=",n2//n1)
+  if noiv=="A":
+    if (n2 < 0 or n1 < 0):
+      print("no pongs numeros negativos en el divisor")
+    if n2==0 or n1==0:
+      print("no se puede dividir entre 0") 
+    else:
+      print(n1,"//",n2,"=",n1//n2,"\t",n2,"//",n1,"=",n2//n1)
+
+
+
+
+
+
+print("\n")
+YN=input("quieres cambiarlo y volver a hacer la operacion como normal, inversa o ambas?  (Y/N): ")
+if YN=="Y": noiv=input("ahora quieres normal(N), inversa(I) o ambas(A)?: ")
+else: print(" ")
+
 
 print("\n")
