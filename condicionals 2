@@ -1,9 +1,11 @@
 n1=int(input("primer numero(n1): "))
 n2=int(input("segundo numero(n2): "))
 
-noiv=input("quieres normal(N), inversa(I) o ambas(A)?: ")
-
 oper=input("pulsa la operacion que quieras como simbulo(+,-,*,**,/,%,//): ")
+
+noiv=input("quieres normal[n1+n2](N), inversa[n2+n1](I) o ambas(A)?: ")
+
+
 
 
 
@@ -64,16 +66,35 @@ if oper=="/":
     else:
       print(n2,"/",n1,"=",n2/n1)
   if noiv=="A":
-    print(n1,"/",n2,"=",n1/n2,"\t",n2,"/",n1,"=",n2/n1)
+    if n2==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n1,"/",n2,"=",n1/n2)
+    if n1==0:
+      print("\t""no se puede dividir entre 0")
+    else:
+      print("\t"n2,"/",n1,"=",n2/n1)
 
 if oper=="%":
   if noiv=="N":
-    print(n1,"%",n2,"=",n1%n2)
+    if n2==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n1,"%",n2,"=",n1%n2)
   if noiv=="I":
-    print(n2,"%",n1,"=",n2%n1)
+    if n1==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n2,"%",n1,"=",n2%n1)
   if noiv=="A":
-    print(n1,"%",n2,"=",n1%n2,"\t",n2,"%",n1,"=",n2%n1)
-
+    if n2==0:
+      print("no se puede dividir entre 0")
+    else:
+      print(n1,"%",n2,"=",n1%n2)
+    if n1==0:
+      print("\t""no se puede dividir entre 0")
+    else:
+      print("\t"n2,"%",n1,"=",n2%n1)
 
 if oper=="//":
   if noiv=="N":
@@ -102,10 +123,10 @@ if oper=="//":
 
 
 
-print("\n")
-YN=input("quieres cambiarlo y volver a hacer la operacion como normal, inversa o ambas?  (Y/N): ")
-if YN=="Y": noiv=input("ahora quieres normal(N), inversa(I) o ambas(A)?: ")
-else: print(" ")
+#print("\n")
+#YN=input("quieres cambiarlo y volver a hacer la operacion como normal, inversa o ambas?  (Y/N): ")
+#if YN=="Y": noiv=input("ahora quieres normal(N), inversa(I) o ambas(A)?: ")
+#else: print(" ")
 
 
 print("\n")
