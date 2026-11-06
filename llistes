@@ -28,3 +28,19 @@ print(llista)
 #convertir un elemento de la lista en vacio
 llista[2] = ""
 print(llista)
+
+
+#programa comprueba si la letra de control del dni es correcta
+
+#ayudas: cada letra del dni tiene un numero que le corresponde, el resto de dividir el numero del dni entre 23 da un numero que corresponde a una letra,  
+#
+print("")
+dni=input("escribe tu dni (8 digitos y ""-""letra mayscula SIN espacios): ")
+
+numerosdni=["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"]
+Ndni=int(dni[0:8])
+res=int(Ndni%23)
+if numerosdni[res]==dni[9]:
+  print("\n""la letra de control es correcta""\n")
+else:
+  print("\n""la letra de control es incorrecta, con ese numero deberia ser",numerosdni[res], "\n")
