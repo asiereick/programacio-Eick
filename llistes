@@ -29,6 +29,10 @@ print(llista)
 llista[2] = ""
 print(llista)
 
+#para añadir cosas a la lista
+print("lista antes,",llista)
+llista.append("baba")
+print(llista)
 
 #programa comprueba si la letra de control del dni es correcta
 
