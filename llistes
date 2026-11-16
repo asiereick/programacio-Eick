@@ -34,6 +34,11 @@ print("lista antes,",llista)
 llista.append("baba")
 print(llista)
 
+#para añadir una cosa nueva en cierta posicion
+
+llista.insert(1,"avejallo")
+print(llista)
+
 #programa comprueba si la letra de control del dni es correcta
 
 #ayudas: cada letra del dni tiene un numero que le corresponde, el resto de dividir el numero del dni entre 23 da un numero que corresponde a una letra,  
