@@ -9,6 +9,7 @@ for i in range(4):
 
 #para pruebas viendo el codigo
 print(ns) 
+#
 print("")
 
 #ahora que puedas adivinar el codigo poniendo los 4 numeros a la vez y el ordenador te dira si son correctos, casi correctos o incorrectos
@@ -22,11 +23,14 @@ while (intent<10):
     for i in range(4):
         jugada.append(int(input("escrive tu jugada: ")))
     print("\n""tu jugada es:",jugada, "\n")
+
+
     Correctas=[]
     for i in range(len(jugada)):
         if jugada[i] == ns[i]:
             Correctas.append(jugada[i])
 
+#dice las jugadas correctas y si son todas acaba
     print("Jugadas correctas:")
     if Correctas == ns:
         print("todas son correctas")
@@ -34,10 +38,17 @@ while (intent<10):
         print("\nfelicidades, has descubierto el codigo", Correctas )
         print("\n")
     else:
-        print(Correctas)
+        if:
+            Correctas[i]!=ns[i]
+            Correctas[i]=""
+        else:
+        
+            print(Correctas[i])
+
 
 #estan en la jugada y en ns pero no en misma posicion
     SitioIncorrecto=[]
 
-    
+
+
 
