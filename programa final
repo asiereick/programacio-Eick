@@ -30,21 +30,19 @@ while (intent<10):
         if jugada[i] == ns[i]:
             Correctas.append(jugada[i])
 
-#dice las jugadas correctas y si son todas acaba
     print("Jugadas correctas:")
     if Correctas == ns:
         intent+=10
         print("\nfelicidades, has descubierto el codigo", Correctas )
         print("\n")
-
+        
     else:
-        if Correctas[i] == ns[i]:
-            print(Correctas[i])
-        else:
-            Correctas[i]=" "
-        print(Correctas)
-    
-    
+        for i in range(len(Correctas)):
+            if Correctas[i] == ns[i]:
+                print(Correctas[i])
+            else:
+                Correctas[i]=''
+
 
 
 #estan en la jugada y en ns pero no en misma posicion
