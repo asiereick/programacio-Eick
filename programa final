@@ -14,14 +14,21 @@ print("")
 #ahora que puedas adivinar el codigo poniendo los 4 numeros a la vez y el ordenador te dira si son correctos, casi correctos o incorrectos
 print("adivina el codigo secreto, 4 numeros del 0 al 6, 10 intentos, suerte \n")
 
-
 intent=0
 while (intent<10):
     print("tienes", 10-intent, "intentos restantes \n")
     intent+=1
     jugada=[]
     for i in range(4):
-        jugada.append (int(input("escrive tu jugada: ")))
-        combrobar=int(jugada[0:4])
-                      
-    print(jugada)
+        jugada.append(int(input("escrive tu jugada: ")))
+    print("\n""tu jugada es:",jugada, "\n")
+    Correctas=[]
+    for i in range(len(jugada)):
+        if jugada[i] == ns[i]:
+            Correctas.append(jugada[i])
+
+    print("Jugadas correctas:")
+    for i in range(len(Correctas)):
+        print(Correctas[i]) 
+#estan en la jugada y en ns pero no en misma posicion
+    SitioIncorrecto=[]
