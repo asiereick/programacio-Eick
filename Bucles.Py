@@ -37,6 +37,7 @@ for i in range(3):
         if(notes[i][j]==10):
             print ("fila", i, "columna", j)
 
+
 #programa que te pide adivinar un programa del 0 al 10 y no para hasta que lo adivines
 
 print ("tienes queadivinar el numero del 0 al 10")

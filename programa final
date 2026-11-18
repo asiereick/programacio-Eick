@@ -1,0 +1,27 @@
+'''el ordenador genera un codigo secreto de 4 numeros entre 0 a 6 el usuario tiene que adivinar la secuencia exacta de numeros con un maximo de 10 intentos
+despues de cada intente el ordenador le dice si los numeros son correctos(es decir ese numero en la posicion correcta) casi correctos(ese numero pero en otra posicion) o incorrectos( no aparece ese numero en la secuencia)
+'''
+#primero generar el codigo secreto
+import random
+ns=[]
+for i in range(4):
+    ns.append(random.randint(0,6))
+
+#para pruebas viendo el codigo
+print(ns) 
+print("")
+
+#ahora que puedas adivinar el codigo poniendo los 4 numeros a la vez y el ordenador te dira si son correctos, casi correctos o incorrectos
+print("adivina el codigo secreto, 4 numeros del 0 al 6, 10 intentos, suerte \n")
+
+
+intent=0
+while (intent<10):
+    print("tienes", 10-intent, "intentos restantes \n")
+    intent+=1
+    jugada=[]
+    for i in range(4):
+        jugada.append (int(input("escrive tu jugada: ")))
+        combrobar=int(jugada[0:4])
+                      
+    print(jugada)
