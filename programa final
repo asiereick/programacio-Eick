@@ -36,14 +36,15 @@ while (intent<10):
         intent+=10
         print("\nfelicidades, has descubierto el codigo", Correctas )
         print("\n")
+
     else:
-        if Correctas[i]==ns[i]:
+        if Correctas[i] == ns[i]:
             print(Correctas[i])
         else:
-            Correctas[i]=""
-            print(Correctas)
+            Correctas[i]=" "
+        print(Correctas)
     
-        
+    
 
 
 #estan en la jugada y en ns pero no en misma posicion
