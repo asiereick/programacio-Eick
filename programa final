@@ -16,7 +16,7 @@ print("adivina el codigo secreto, 4 numeros del 0 al 6, 10 intentos, suerte \n")
 
 intent=0
 while (intent<10):
-    print("tienes", 10-intent, "intentos restantes \n")
+    print("\n""tienes", 10-intent, "intentos restantes \n")
     intent+=1
     jugada=[]
     for i in range(4):
@@ -28,7 +28,16 @@ while (intent<10):
             Correctas.append(jugada[i])
 
     print("Jugadas correctas:")
-    for i in range(len(Correctas)):
-        print(Correctas[i]) 
+    if Correctas == ns:
+        print("todas son correctas")
+        intent+=10
+        print("\nfelicidades, has descubierto el codigo", Correctas )
+        print("\n")
+    else:
+        print(Correctas)
+
 #estan en la jugada y en ns pero no en misma posicion
     SitioIncorrecto=[]
+
+    
+
