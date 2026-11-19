@@ -38,19 +38,24 @@ while (intent<10):
         jugada.append(input("escrive tu jugada: "))
     print("\n""tu jugada es:",jugada, "\n")
 
+    Correctas=[]
+    for i in range(len(jugada)):
+        if jugada[i] == ns[i]:
+            Correctas.append(jugada[i])
 
-    
-    if jugada == ns:
+
+    print("Jugadas:")
+    if Correctas == ns:
         intent+=10
-        print("\nfelicidades, has descubierto el codigo", jugada )
+        print("\nfelicidades, has descubierto el codigo", Correctas )
         print("\n")
-        
+     
     else:
         for i in range(4):
             if jugada[i] == ns[i]:
                 print("Correcta:", jugada[i])
             elif jugada[i] in ns:
-                 print("Existe en otra posición:", jugada[i])
+                print("Existe en otra posición:", jugada[i])
             else:
                 print("Incorrecta:", jugada[i])
 
