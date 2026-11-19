@@ -13,40 +13,49 @@ print(ns)
 print("")
 
 #ahora que puedas adivinar el codigo poniendo los 4 numeros a la vez y el ordenador te dira si son correctos, casi correctos o incorrectos
-print("adivina el codigo secreto, 4 numeros del 0 al 6, 10 intentos, suerte \n")
+print("adivina el codigo secreto, 4 numeros del 0 al 6, suerte \n")
+max=input("que dificultad quieres: F son 10 intentos, M son 6 y D son 3: ")
+
+if max == "F":
+    max = 10
+if max == "M":
+    max = 6
+if max == "D":
+    max = 3
+
+
+
 
 intent=0
-while (intent<10):
-    print("\n""tienes", 10-intent, "intentos restantes \n")
+while (intent<max):
+    print("\n""tienes", max-intent, "intentos restantes \n")
     intent+=1
     jugada=[]
     for i in range(4):
-        jugada.append(int(input("escrive tu jugada: ")))
+        jugada.append(input("escrive tu jugada: "))
     print("\n""tu jugada es:",jugada, "\n")
 
 
-    Correctas=[]
-    for i in range(len(jugada)):
-        if jugada[i] == ns[i]:
-            Correctas.append(jugada[i])
-
-    print("Jugadas correctas:")
-    if Correctas == ns:
+    
+    if jugada == ns:
         intent+=10
-        print("\nfelicidades, has descubierto el codigo", Correctas )
+        print("\nfelicidades, has descubierto el codigo", jugada )
         print("\n")
         
     else:
-        for i in range(len(Correctas)):
-            if Correctas[i] == ns[i]:
-                print(Correctas[i])
-            else:
-                Correctas[i]=''
+        for i in range(4):
+            if jugada[i] == ns[i]:
+                print("Correcta:", jugada[i])
+            if jugada[i] in ns:
+                 print("Existe en otra posición:", jugada[i])
+            if jugada[i] != ns[i]:
+                print("Incorrecta:", jugada[i])
 
 
-
-#estan en la jugada y en ns pero no en misma posicion
-    SitioIncorrecto=[]
+if intent >= 10:
+    print("\nhas perdido, el codigo se ha resistido ha tiel codigo era", ns)
+    print("")
+            
 
 
 
