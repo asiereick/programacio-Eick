@@ -13,8 +13,11 @@ print(ns)
 print("")
 
 #ahora que puedas adivinar el codigo poniendo los 4 numeros a la vez y el ordenador te dira si son correctos, casi correctos o incorrectos
-print("adivina el codigo secreto, 4 numeros del 0 al 6, suerte \n")
-max=input("que dificultad quieres: F son 10 intentos, M son 6 y D son 3: ")
+print("adivina el codigo secreto, 4 numeros del 0 al 6, 10 intentos, suerte \n")
+
+
+
+'''max=input("que dificultad quieres: F son 10 intentos, M son 6 y D son 3: ")
 
 if max == "F":
     max = 10
@@ -23,12 +26,12 @@ if max == "M":
 if max == "D":
     max = 3
 
-
+'''
 
 
 intent=0
-while (intent<max):
-    print("\n""tienes", max-intent, "intentos restantes \n")
+while (intent<10):
+    print("\n""tienes", 10-intent, "intentos restantes \n")
     intent+=1
     jugada=[]
     for i in range(4):
@@ -46,9 +49,9 @@ while (intent<max):
         for i in range(4):
             if jugada[i] == ns[i]:
                 print("Correcta:", jugada[i])
-            if jugada[i] in ns:
+            elif jugada[i] in ns:
                  print("Existe en otra posición:", jugada[i])
-            if jugada[i] != ns[i]:
+            else:
                 print("Incorrecta:", jugada[i])
 
 
