@@ -12,11 +12,10 @@ print("")
 intent=0
 while (intent<10):
     print("tienes", 10-intent, "intentos restantes \n")
-    print("\n""tienes", 10-intent, "intentos restantes \n")
     intent+=1
     jugada=[]
     for i in range(4):
-        jugada.append(int(input("escrive tu jugada: ")))
+        jugada.append(input("escrive tu jugada: "))
     print("\n""tu jugada es:",jugada, "\n")
 
 
