@@ -12,10 +12,7 @@ print(ns)
 #
 print("")
 
-#ahora que puedas adivinar el codigo poniendo los 4 numeros a la vez y el ordenador te dira si son correctos, casi correctos o incorrectos
 print("adivina el codigo secreto, 4 numeros del 0 al 6, 10 intentos, suerte \n")
-
-
 
 '''max=input("que dificultad quieres: F son 10 intentos, M son 6 y D son 3: ")
 
@@ -27,8 +24,6 @@ if max == "D":
     max = 3
 
 '''
-
-
 intent=0
 while (intent<10):
     print("\n""tienes", 10-intent, "intentos restantes \n")
@@ -38,26 +33,20 @@ while (intent<10):
         jugada.append(input("escrive tu jugada: "))
     print("\n""tu jugada es:",jugada, "\n")
 
-    Correctas=[]
-    for i in range(len(jugada)):
-        if jugada[i] == ns[i]:
-            Correctas.append(jugada[i])
-
-
-    print("Jugadas:")
-    if Correctas == ns:
-        intent+=10
-        print("\nfelicidades, has descubierto el codigo", Correctas )
+   
+    if jugada == ns:
+        print("\nfelicidades, has descubierto el codigo", jugada )
         print("\n")
-     
+        intent += 10
     else:
-        for i in range(4):
-            if jugada[i] == ns[i]:
-                print("Correcta:", jugada[i])
-            elif jugada[i] in ns:
-                print("Existe en otra posición:", jugada[i])
-            else:
-                print("Incorrecta:", jugada[i])
+        if jugada[i] == ns[i]:
+            print("jugada correcta:", jugada[i])
+        elif jugada[i] in ns:
+            print("posicion incorrecta:", jugada[i])
+
+
+    
+        
 
 
 if intent >= 10:
