@@ -39,9 +39,8 @@ while (intent<10):
 
 
     casi=[]
-    for i in range(len(jugada)):
-        if jugada[i] in ns[i]:
-            casi.append(jugada[i])
+    if jugada[i] in ns[i]:
+        casi.append(jugada[i])
 
     print("jugadas en otra posicion:")
     if jugada[i] in ns[i]:
