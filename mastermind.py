@@ -50,6 +50,7 @@ while (intent<10):
 
 
 
+
     erronias=[]
     for i in range(len(jugada)):
         if jugada[i] not in ns:
