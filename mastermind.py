@@ -15,7 +15,7 @@ while (intent<10):
     intent+=1
     jugada=[]
     for i in range(4):
-        jugada.append(input("escrive tu jugada: "))
+        jugada.append(int(input("escrive tu jugada: ")))
     print("\n""tu jugada es:",jugada, "\n")
 
 
@@ -25,35 +25,47 @@ while (intent<10):
         if jugada[i] == ns[i]:
             Correctas.append(jugada[i])
 
-    print("Jugadas correctas:")
-    for i in range(len(Correctas)):
-        print(Correctas[i]) 
+    print("Jugadas correctas:""\n") 
     if Correctas == ns:
-        print("todas son correctas")
-        intent+=10
+        intent = 10
         print("\nfelicidades, has descubierto el codigo", Correctas )
         print("\n")
-    else:
-        print(Correctas)
+    else:    
+        if Correctas == []:
+            print("no hay jugadas correctas""\n")
+        else:
+            print(Correctas)
+            print("")
+
+    
+
+        casi=[]
+        for i in range(len(jugada)):
+            if jugada[i] in ns and jugada[i] != ns[i]:
+                casi.append(jugada[i])
+
+        print("jugadas en otra posicion:""\n")
+        if casi == []:
+            print("no hay jugadas en posiciones equivocadas" "\n")
+        else:
+            print(casi)
+            print("")
 
 
 
-    casi=[]
-    if jugada[i] in ns[i]:
-        casi.append(jugada[i])
 
-    print("jugadas en otra posicion:")
-    if jugada[i] in ns[i]:
-        print(casi)
+        erronias=[]
+        for i in range(len(jugada)):
+            if jugada[i] not in ns:
+                erronias.append(jugada[i])
 
+        print("jugadas erronias:""\n")
+        if erronias == []:
+            print("no hay jugadas erronias""\n")
+        else:
+            print(erronias )
+            print("")
 
-
-
-    erronias=[]
-    for i in range(len(jugada)):
-        if jugada[i] not in ns:
-            erronias.append(jugada[i])
-
-    print("jugadas erronias:")
-    if jugada[i] not in ns:
-        print(erronias)
+if intent == 10:
+    print("no has descubierto el codigo en 10 intentos, reinicia y prueba otro")
+    print("")
