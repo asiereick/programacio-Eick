@@ -4,7 +4,7 @@ for i in range(4):
     ns.append(random.randint(0,6))
 
 #para pruebas viendo el codigo
-#print(ns) 
+print(ns) 
 #
 print("")
 
@@ -19,6 +19,9 @@ while (intent<10):
     print("\n""tu jugada es:",jugada, "\n")
 
 
+    
+
+
 
     Correctas=[]
     for i in range(len(jugada)):
@@ -27,7 +30,7 @@ while (intent<10):
 
      
     if Correctas == ns:
-        intent = 10
+        intent += 11
         print("\nfelicidades, has descubierto el codigo", Correctas )
         print("\n")
     else: 
