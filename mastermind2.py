@@ -36,6 +36,7 @@ while (intent<max):
     ju = (input("escrive 4 numeros del 1 al 6 sin espacios: "))
     if len(ju) != 4 or any(num not in "123456" for num in ju):
         print("Introduce exactamente 4 dígitos del 1 al 6.")
+        intent += 11
 
     jugada = [int(num) for num in ju]
     
@@ -65,6 +66,6 @@ while (intent<max):
         print("\n")
 
 
-if intent == 10:
+if intent == max:
     print("no has descubierto el codigo en 10 intentos, reinicia y prueba otro")
     print("")
